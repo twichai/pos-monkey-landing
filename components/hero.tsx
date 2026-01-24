@@ -23,27 +23,26 @@ export const Hero = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center gap-8 text-center">
           {/* Badge */}
-          <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+          {/* <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
             <Badge
               variant="secondary"
               className="px-4 py-1.5 text-sm font-semibold rounded-full border-primary/20 bg-primary/10 text-primary"
             >
               ✨ อัปเดตใหม่: เชื่อมต่อ LINE SHOPPING ได้แล้ววันนี้
             </Badge>
-          </motion.div>
+          </motion.div> */}
 
           {/* H1 Title */}
           <motion.h1
-            className="text-4xl font-extrabold tracking-tighter sm:text-6xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 max-w-4xl"
+            className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 max-w-4xl leading-tight"
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
           >
-            ระบบ POS ร้านอาหาร <span className="text-primary italic">ฟรี</span>{" "}
-            ราคาถูก
-            <br className="hidden sm:block" />
-            <span className="text-3xl sm:text-4xl md:text-5xl">
-              เริ่มต้นแค่ 36 บาท/เดือน
+            ระบบ POS <span className="text-primary">ฟรี</span> สำหรับร้านอาหาร
+            <br />
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground/80">
+              เริ่มต้นแค่ 36บาท/เดือน • ราคาถูกที่สุด
             </span>
           </motion.h1>
 

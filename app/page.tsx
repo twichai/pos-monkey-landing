@@ -84,27 +84,46 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
 
-        {/* 3. Social Proof */}
-        <section className="w-full py-12 bg-muted/30 border-y">
+        {/* 3. Stats / Social Proof */}
+        <section className="w-full py-20 bg-white dark:bg-black">
           <div className="container mx-auto px-4 md:px-6">
-            <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
-              ไว้วางใจโดยร้านค้าชั้นนำกว่า 10,000+ แห่ง
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-              {/* Logos Placeholders */}
-              {[
-                "Cafe Amazon",
-                "After You",
-                "Flash Coffee",
-                "BearHouse",
-                "Potato Corner",
-              ].map((brand, i) => (
-                <div key={i} className="flex items-center justify-center h-12">
-                  <span className="text-xl font-bold text-zinc-400">
-                    {brand} Model
-                  </span>
-                </div>
-              ))}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center mb-16">
+              ผลลัพธ์จากร้านค้าที่ใช้งานจริง
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto text-center">
+              {/* Stat 1 */}
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  ลดเวลารับออเดอร์ได้ถึง
+                </p>
+                <p className="text-6xl lg:text-7xl font-bold tracking-tight mb-2">
+                  3x
+                </p>
+                <p className="text-muted-foreground">เร็วขึ้น</p>
+              </div>
+
+              {/* Stat 2 */}
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  ร้านค้าพบว่ายอดขายเพิ่มขึ้น
+                </p>
+                <p className="text-6xl lg:text-7xl font-bold tracking-tight mb-2">
+                  30%
+                </p>
+                <p className="text-muted-foreground">จากระบบสมาชิก</p>
+              </div>
+
+              {/* Stat 3 */}
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  เริ่มใช้งานได้ภายใน
+                </p>
+                <p className="text-6xl lg:text-7xl font-bold tracking-tight mb-2">
+                  5
+                </p>
+                <p className="text-muted-foreground">นาที</p>
+              </div>
             </div>
           </div>
         </section>

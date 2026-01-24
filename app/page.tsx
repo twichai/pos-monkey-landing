@@ -243,6 +243,47 @@ export default function Home() {
                   ข้อมูลจะถูก Sync ขึ้น Cloud โดยอัตโนมัติ
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-4" className="border-b-0 mb-2">
+                <AccordionTrigger className="text-lg font-medium hover:text-primary">
+                  POS Monkey ราคาเท่าไหร่? มีแพ็คเกจฟรีไหม?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  เรามีราคา Early Bird สุดพิเศษเริ่มต้นเพียง 36 บาท/เดือน
+                  ได้ทุกฟีเจอร์ครบ และสามารถทดลองใช้ฟรี 14 วันก่อนตัดสินใจ
+                  ไม่ต้องผูกบัตรเครดิต ยกเลิกได้ทุกเมื่อ
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5" className="border-b-0 mb-2">
+                <AccordionTrigger className="text-lg font-medium hover:text-primary">
+                  ต้องซื้อเครื่อง POS หรืออุปกรณ์พิเศษไหม?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  ไม่ต้องซื้อเครื่องใหม่ครับ POS Monkey ใช้งานผ่าน Web Browser
+                  ได้เลย สามารถใช้กับคอมพิวเตอร์ แท็บเล็ต iPad
+                  หรือมือถือที่มีอยู่ ประหยัดค่าใช้จ่ายได้เยอะมาก
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6" className="border-b-0 mb-2">
+                <AccordionTrigger className="text-lg font-medium hover:text-primary">
+                  เชื่อมต่อกับ Grab, LINE MAN, Shopee Food ได้ไหม?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  ได้ครับ แพ็คเกจ Business ขึ้นไปสามารถเชื่อมต่อกับ Delivery
+                  Apps ยอดนิยมได้ทั้งหมด รวมถึง LINE SHOPPING ด้วย
+                  ออเดอร์จะเข้าระบบอัตโนมัติ ไม่ต้องกรอกซ้ำ
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7" className="border-b-0 mb-2">
+                <AccordionTrigger className="text-lg font-medium hover:text-primary">
+                  ระบบตัดสต็อกวัตถุดิบ (BOM) ทำงานยังไง?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  คุณสามารถตั้งสูตรอาหาร (Recipe)
+                  ได้ว่าเมนูนี้ใช้วัตถุดิบอะไรบ้าง เมื่อขายออกไป
+                  ระบบจะตัดสต็อกวัตถุดิบให้อัตโนมัติ
+                  พร้อมแจ้งเตือนเมื่อของใกล้หมด ไม่ต้องมานั่งนับสต็อกเองอีกต่อไป
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </section>

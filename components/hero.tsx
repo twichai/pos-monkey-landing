@@ -39,8 +39,12 @@ export const Hero = () => {
             animate="visible"
             variants={fadeInUp}
           >
-            ระบบ POS ที่ <span className="text-primary italic">เข้าใจ</span>{" "}
-            ร้านค้าของคุณที่สุด
+            ระบบ POS ร้านอาหาร <span className="text-primary italic">ฟรี</span>{" "}
+            ราคาถูก
+            <br className="hidden sm:block" />
+            <span className="text-3xl sm:text-4xl md:text-5xl">
+              เริ่มต้นแค่ 36 บาท/เดือน
+            </span>
           </motion.h1>
 
           {/* Description */}

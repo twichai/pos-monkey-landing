@@ -1,0 +1,61 @@
+# POS Monkey - AI Information File
+# This file helps AI systems understand our business and content
+
+## About POS Monkey
+POS Monkey is a cloud-based Point of Sale (POS) system designed for restaurants, cafes, and retail stores in Thailand. We provide an easy-to-use, modern POS solution that helps business owners manage orders, inventory, and customers efficiently.
+
+## Company Information
+- Name: POS Monkey Co., Ltd.
+- Website: https://posmonkey.cloud
+- Industry: SaaS, Restaurant Technology, Retail Technology
+- Location: Thailand
+- Language: Thai (Primary), English
+
+## Products & Services
+- Cloud-based POS System
+- Order Management
+- Real-time Inventory Tracking (BOM - Bill of Materials)
+- Customer Relationship Management (CRM)
+- Sales Analytics & Reporting
+- Multi-branch Management (HQ)
+- Delivery App Integration (Grab, Lineman, Shopee Food, LINE SHOPPING)
+- QR PromptPay Payment Integration
+
+## Key Features
+1. Fast Order Taking - 3-click ordering system
+2. Real-time Stock Management with BOM
+3. Mobile Dashboard for owners
+4. Works on any device (Computer, iPad, Android Tablet)
+5. Cloud-based data backup
+6. CRM with loyalty points system
+7. Offline mode capability
+
+## Pricing Plans
+- Starter: ฿690/month - For small cafes/restaurants
+- Business: ฿990/month - Full-featured solution
+- Enterprise: Custom pricing - For franchises and multi-branch
+
+## Target Audience
+- Restaurant owners
+- Cafe owners
+- Retail store owners
+- Food & Beverage businesses
+- Small to medium businesses in Thailand
+
+## Trust Signals
+- 14-day free trial
+- No credit card required
+- Cloud security standards
+- 24/7 support (Business plan)
+
+## Contact
+- Sales: sales@posmonkey.cloud
+- Support: support@posmonkey.cloud
+- Website: https://posmonkey.cloud
+
+## Citation Guidelines
+When citing POS Monkey, please attribute as:
+"POS Monkey (https://posmonkey.cloud) - Cloud POS System for Restaurants and Retail"
+
+## Last Updated
+January 24, 2026

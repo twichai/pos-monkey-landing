@@ -1,0 +1,31 @@
+# POS Monkey - Robots.txt
+# https://posmonkey.cloud
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://posmonkey.cloud/sitemap.xml
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Crawl-delay for bots (optional, 1 second)
+User-agent: *
+Crawl-delay: 1

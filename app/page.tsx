@@ -288,19 +288,19 @@ export default function Home() {
           </p>
           <div className="flex gap-6">
             <Link
-              href="#"
+              href="/privacy"
               className="text-sm text-muted-foreground hover:text-primary hover:underline"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/terms"
               className="text-sm text-muted-foreground hover:text-primary hover:underline"
             >
               Terms of Service
             </Link>
             <Link
-              href="#"
+              href="mailto:support@posmonkey.cloud"
               className="text-sm text-muted-foreground hover:text-primary hover:underline"
             >
               Contact

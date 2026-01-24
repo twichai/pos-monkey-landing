@@ -43,9 +43,9 @@ export default function Home() {
             </Link>
             <Link
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              href="#comparison"
+              href="#early-bird"
             >
-              เปรียบเทียบ
+              โปรโมชั่น
             </Link>
             <Link
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { Pricing } from "@/components/pricing";
+import { EarlyBirdPricing } from "@/components/early-bird-pricing";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -10,7 +11,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  Check,
   Star,
   BarChart3,
   Package,
@@ -19,8 +19,6 @@ import {
   ShieldCheck,
   Zap,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col font-sans bg-white dark:bg-black selection:bg-primary/20">
@@ -178,98 +176,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. Aggressive Comparison */}
-        <section
-          id="comparison"
-          className="w-full py-24 bg-zinc-50 dark:bg-zinc-900/50"
-        >
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ทำไมต้องจ่ายแพงกว่า?
-              </h2>
-              <p className="text-xl text-muted-foreground mt-4">
-                เทียบความคุ้มค่าแบบชัดๆ ระหว่าง POS Monkey กับระบบอื่นๆ ในตลาด
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto bg-white dark:bg-black rounded-2xl shadow-xl border overflow-hidden">
-              <div className="grid grid-cols-3 p-6 border-b bg-muted/30">
-                <div className="col-span-1 font-bold text-lg text-muted-foreground pt-4">
-                  คุณสมบัติ
-                </div>
-                <div className="col-span-1 text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">
-                    POS Monkey
-                  </div>
-                  <Badge className="bg-primary/10 text-primary hover:bg-primary/20 border-0">
-                    แนะนำ
-                  </Badge>
-                </div>
-                <div className="col-span-1 text-center pt-2">
-                  <div className="text-xl font-bold text-muted-foreground">
-                    ระบบทั่วไป
-                  </div>
-                </div>
-              </div>
-
-              {[
-                {
-                  name: "ราคาเริ่มต้น",
-                  us: "690 บาท",
-                  them: "1,200+ บาท",
-                  win: true,
-                },
-                {
-                  name: "ค่าแรกเข้า / ค่าติดตั้ง",
-                  us: "0 บาท",
-                  them: "3,000 - 5,000 บาท",
-                  win: true,
-                },
-                {
-                  name: "อุปกรณ์ที่รองรับ",
-                  us: "ทุกอุปกรณ์ (Web-based)",
-                  them: "เฉพาะเครื่องที่กำหนด",
-                  win: true,
-                },
-                {
-                  name: "เชื่อมต่อ Food Delivery",
-                  us: "ฟรี (ไม่จำกัด)",
-                  them: "จ่ายเพิ่ม 300/เดือน",
-                  win: true,
-                },
-                {
-                  name: "การอัปเดตฟีเจอร์",
-                  us: "ฟรี ตลอดชีพ",
-                  them: "เสียเงินอัปเกรด",
-                  win: true,
-                },
-                {
-                  name: "Support",
-                  us: "24/7 (ทีมงานไทย)",
-                  them: "ธนาคาร / Email",
-                  win: true,
-                },
-              ].map((row, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-3 p-6 border-b hover:bg-muted/5 transition-colors items-center"
-                >
-                  <div className="col-span-1 font-medium text-muted-foreground">
-                    {row.name}
-                  </div>
-                  <div className="col-span-1 text-center font-bold text-lg flex items-center justify-center gap-2">
-                    {row.win && <Check className="h-5 w-5 text-green-500" />}{" "}
-                    {row.us}
-                  </div>
-                  <div className="col-span-1 text-center text-muted-foreground flex items-center justify-center gap-2">
-                    {row.them}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* 5. Early Bird Pricing */}
+        <EarlyBirdPricing />
 
         {/* 6. Pricing Section */}
         <Pricing />

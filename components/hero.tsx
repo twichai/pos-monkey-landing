@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";

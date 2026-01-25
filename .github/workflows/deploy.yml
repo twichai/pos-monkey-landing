@@ -108,7 +108,7 @@ jobs:
             docker run -d \
               --name pos-monkey-landing \
               --restart unless-stopped \
-              -p 3000:3000 \
+              -p 9897:3000 \
               -e NODE_ENV=production \
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 

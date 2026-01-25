@@ -160,8 +160,8 @@ export default function Home() {
                 },
                 {
                   icon: MonitorSmartphone,
-                  title: "ใช้ได้ทุกอุปกรณ์",
-                  desc: "ไม่บังคับซื้อเครื่องใหม่ ใช้คอมพิวเตอร์ iPad หรือ Tablet Android ที่มีอยู่ได้เลย",
+                  title: "ใช้ได้ทั้ง Web & Android",
+                  desc: "ไม่บังคับซื้อเครื่องใหม่ ใช้ผ่าน Web Browser หรือแอป Android ที่มีอยู่ได้เลย (รองรับ iOS เร็วๆ นี้)",
                 },
                 {
                   icon: ShieldCheck,
@@ -268,9 +268,13 @@ export default function Home() {
                   เชื่อมต่อกับ Grab, LINE MAN, Shopee Food ได้ไหม?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  ได้ครับ แพ็คเกจ Business ขึ้นไปสามารถเชื่อมต่อกับ Delivery
-                  Apps ยอดนิยมได้ทั้งหมด รวมถึง LINE SHOPPING ด้วย
-                  ออเดอร์จะเข้าระบบอัตโนมัติ ไม่ต้องกรอกซ้ำ
+                  <span className="inline-block bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400 text-xs px-2 py-1 rounded-full mb-2">
+                    กำลังพัฒนา
+                  </span>
+                  <br />
+                  ฟีเจอร์เชื่อมต่อ Delivery Apps กำลังอยู่ในระหว่างพัฒนาครับ
+                  เราวางแผนจะเปิดให้ใช้งานเร็วๆ นี้ สมัคร Early Bird ตอนนี้
+                  จะได้ใช้ฟีเจอร์นี้ฟรีเมื่อเปิดตัว!
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7" className="border-b-0 mb-2">
@@ -278,10 +282,14 @@ export default function Home() {
                   ระบบตัดสต็อกวัตถุดิบ (BOM) ทำงานยังไง?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  คุณสามารถตั้งสูตรอาหาร (Recipe)
-                  ได้ว่าเมนูนี้ใช้วัตถุดิบอะไรบ้าง เมื่อขายออกไป
-                  ระบบจะตัดสต็อกวัตถุดิบให้อัตโนมัติ
-                  พร้อมแจ้งเตือนเมื่อของใกล้หมด ไม่ต้องมานั่งนับสต็อกเองอีกต่อไป
+                  <span className="inline-block bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400 text-xs px-2 py-1 rounded-full mb-2">
+                    กำลังพัฒนา
+                  </span>
+                  <br />
+                  ฟีเจอร์ตัดสต็อกวัตถุดิบ (BOM) กำลังอยู่ในระหว่างพัฒนาครับ
+                  เมื่อพร้อมแล้วคุณจะสามารถตั้งสูตรอาหาร (Recipe)
+                  ได้ว่าเมนูนี้ใช้วัตถุดิบอะไรบ้าง
+                  และระบบจะตัดสต็อกให้อัตโนมัติเมื่อขาย
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

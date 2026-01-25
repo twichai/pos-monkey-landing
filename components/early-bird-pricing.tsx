@@ -5,16 +5,21 @@ import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 
 export function EarlyBirdPricing() {
-  const allFeatures = [
+  const completedFeatures = [
     "ระบบรับออเดอร์ไม่จำกัด",
+    "Import สินค้าผ่าน Excel/XLSX",
+    "ระบบ SKU จัดการสินค้า",
+    "Stock In - รับสินค้าเข้าสต็อก",
     "รายงานยอดขาย Real-time",
+    "รองรับ Android App",
+  ];
+
+  const comingSoonFeatures = [
+    "เชื่อมต่อ Grab, LINE MAN, Shopee Food",
     "เชื่อมต่อเครื่องพิมพ์ใบเสร็จ",
     "ตัดสต็อกวัตถุดิบ (BOM)",
     "ระบบสมาชิก CRM",
-    "เชื่อมต่อ Delivery Apps",
   ];
-
-  const aiFeature = "ฟีเจอร์ AI วิเคราะห์ยอดขาย";
 
   return (
     <section
@@ -78,11 +83,29 @@ export function EarlyBirdPricing() {
                 </span>
                 <span className="text-zinc-400 text-lg">/เดือน</span>
               </div>
-              <p className="text-zinc-500 mb-4">ได้ทุกฟีเจอร์</p>
+              <p className="text-zinc-500 mb-4">ฟีเจอร์ที่พร้อมใช้งานแล้ว</p>
               <ul className="space-y-3">
-                {allFeatures.map((feature, i) => (
+                {completedFeatures.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-zinc-300">
-                    <Check className="h-5 w-5 text-zinc-500 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Coming Soon */}
+              <p className="text-zinc-500 mt-6 mb-3 text-sm font-medium">
+                กำลังพัฒนา (Coming Soon)
+              </p>
+              <ul className="space-y-2">
+                {comingSoonFeatures.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-3 text-zinc-500 text-sm"
+                  >
+                    <span className="h-5 w-5 flex items-center justify-center flex-shrink-0 text-xs">
+                      ⏳
+                    </span>
                     {feature}
                   </li>
                 ))}
@@ -103,13 +126,16 @@ export function EarlyBirdPricing() {
               <p className="text-zinc-500 mb-4">ทุกอย่างใน ฿36 + AI</p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-zinc-300">
-                  <Check className="h-5 w-5 text-zinc-500 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-emerald-500 flex-shrink-0" />
                   ทุกฟีเจอร์ในแพ็คเกจ ฿36
                 </li>
                 <li className="flex items-center gap-3 text-zinc-300">
                   <Check className="h-5 w-5 text-emerald-500 flex-shrink-0" />
                   <span className="text-emerald-400 font-medium">
-                    {aiFeature}
+                    ฟีเจอร์ AI วิเคราะห์ยอดขาย
+                  </span>
+                  <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded-full">
+                    Coming Soon
                   </span>
                 </li>
               </ul>

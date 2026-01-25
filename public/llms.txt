@@ -31,8 +31,8 @@ POS Monkey is a cloud-based Point of Sale (POS) system designed for restaurants,
 7. Offline mode capability
 
 ## Pricing Plans
-- Starter: ฿690/month - For small cafes/restaurants
-- Business: ฿990/month - Full-featured solution
+- Starter: ฿5xx/month - For small cafes/restaurants
+- Business: ฿9xx/month - Full-featured solution
 - Enterprise: Custom pricing - For franchises and multi-branch
 
 ## Target Audience

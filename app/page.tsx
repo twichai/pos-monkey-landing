@@ -19,6 +19,10 @@ import {
   ShieldCheck,
   Zap,
 } from "lucide-react";
+
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL || "https://admin.posmonkey.cloud";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col font-sans bg-white dark:bg-black selection:bg-primary/20">
@@ -67,15 +71,13 @@ export default function Home() {
               variant="ghost"
               className="hidden sm:inline-flex hover:bg-muted font-medium"
             >
-              <Link href="https://posmonkey.cloud/login">เข้าสู่ระบบ</Link>
+              <Link href={`${APP_URL}/login`}>เข้าสู่ระบบ</Link>
             </Button>
             <Button
               asChild
               className="rounded-full px-6 font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
             >
-              <Link href="https://posmonkey.cloud/register">
-                เริ่มต้นใช้งานฟรี
-              </Link>
+              <Link href={`${APP_URL}/register`}>เริ่มต้นใช้งานฟรี</Link>
             </Button>
           </div>
         </div>
@@ -314,7 +316,7 @@ export default function Home() {
                 variant="secondary"
                 className="h-14 px-10 text-lg font-bold shadow-2xl hover:bg-white text-primary"
               >
-                <Link href="https://posmonkey.cloud/register">
+                <Link href={`${APP_URL}/register`}>
                   สมัครใช้งานฟรีทันที (ไม่ต้องรอ)
                 </Link>
               </Button>

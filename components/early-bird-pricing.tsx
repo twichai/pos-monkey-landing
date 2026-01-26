@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL || "https://admin.posmonkey.cloud";
+
 export function EarlyBirdPricing() {
   const completedFeatures = [
     "ระบบรับออเดอร์ไม่จำกัด",
@@ -55,7 +58,7 @@ export function EarlyBirdPricing() {
                 variant="secondary"
                 className="h-12 px-6 bg-white hover:bg-zinc-100 text-zinc-900 font-semibold rounded-lg"
               >
-                <Link href="https://posmonkey.cloud/register">
+                <Link href={`${APP_URL}/register`}>
                   สมัคร Early Bird
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

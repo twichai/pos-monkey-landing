@@ -5,6 +5,9 @@ import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL || "https://admin.posmonkey.cloud";
+
 export const Hero = () => {
   // Animation variants
   const fadeInUp = {
@@ -79,7 +82,7 @@ export const Hero = () => {
               size="lg"
               className="h-12 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
             >
-              <Link href="https://posmonkey.cloud/register">
+              <Link href={`${APP_URL}/register`}>
                 ทดลองใช้ฟรี 14 วัน <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
